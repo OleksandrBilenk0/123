@@ -180,6 +180,13 @@ b {
     }
 }
 
+@media (max-width: 900px) {
+    .about-hedding {
+        font-size: 32px;
+        line-height: 32px; 
+    }
+}
+
 @media (max-width: 780px) {
     .info-about-user {
         display: flex;
@@ -235,14 +242,12 @@ b {
         width: 500px;
         height: 130px;
         justify-content: space-between;
-        /* margin-right: 200px; */
     }
 
     .app-top {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* margin-right: 62px; */
     }
 
     .app-bottom {
@@ -255,3 +260,26 @@ b {
         margin-right: 20px;
     }
 }
+
+@media (max-width: 560px) {
+
+    .about-content {
+        max-width: 400px;
+    }
+
+    .info-about-user {
+        max-width: 350px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .user-app-mobile {
+        width: 350px;
+    }
+
+    .about {
+        margin-top: 97px;
+    }
+}
+
+

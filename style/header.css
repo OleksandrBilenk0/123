@@ -250,3 +250,81 @@ body {
         line-height: 77px;
     }
 }
+
+@media (max-width: 860px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .container {
+        width: 500px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .home-content {
+        max-width: 300px;
+    }
+
+    .home-hedding {
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: 0.1em;
+    }
+
+    .circle {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .container {
+        width: 400px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .home-content {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        width: 300px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .home-content {
+        max-width: 300px;
+    }
+
+    .home-info {
+        margin-top: 55px;
+    }
+
+    .home-hedding {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+    }
+
+    .circle {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .centered h4 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 20px;
+        font-family: 'Kharkiv Tone';
+    }
+}

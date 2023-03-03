@@ -9,12 +9,18 @@
     z-index: 999;
     width: 40px;
     height: 30px;
-
+    
 
     justify-content: center;
     align-items: center;
 
     display: none;
+}
+
+@media (max-width: 860px) {
+    .mobile_nav_btn {
+        display: flex;
+    }
 }
 
 .mobile_nav_btn_icon {
@@ -46,6 +52,7 @@
 
 .mobile_nav_btn_icon.active {
     background-color: transparent;
+    position: fixed;
 }
 
 .mobile_nav_btn_icon.active::before {
