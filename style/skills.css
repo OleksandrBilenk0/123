@@ -1,5 +1,75 @@
+.skills {
+    height: 100vh;
+    color: white;
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.skills-content {
+    max-width: 1360px;
+}
 
+.skills-hedding {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kharkiv Tone';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 65px;
+    background-color: #2AA5A0;
+    background-image: linear-gradient(99.73deg, #9747FF 0.42%, #5A77F6 109.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-info {
+    margin-top: 120px;
+}
+
+.skills-circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 120px;
+    height: 360px;
+}
+
+.experience-top {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 125px;
+}
+
+.experience-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 150px;
+}
+
+.experience-item {
+    width: 340px;
+}
+
+.experience-item img {
+    margin-bottom: 50px;
+}
+
+.experience-item p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
 
 
 /* .main {

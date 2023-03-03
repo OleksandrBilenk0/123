@@ -1,7 +1,10 @@
 .about {
-    /* height: 100vh; */
+    height: 100vh;
     color: white;
     margin-top: 239px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-content {
