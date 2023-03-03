@@ -27,7 +27,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    width: 1270px;
+    max-width: 1270px;
     
 }
 
@@ -63,6 +63,13 @@
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
         mask-composite: exclude; 
+}
+
+
+@media (max-width: 1390px) {
+    .contact {
+        height: auto;
+    }
 }
 
 

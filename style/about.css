@@ -121,12 +121,13 @@ b {
 
 .user-app {
     display: flex;
+    justify-content: space-between;
 }
 
 .app-check {
     display: flex;
     align-items: center;
-    margin-right: 62px;
+    /* margin-right: 62px; */
 }
 
 .app-check:last-child {
@@ -139,4 +140,38 @@ b {
 
 .app-check img:last-child {
     margin-right: 0;
+}
+
+
+@media (max-width: 1550px) {
+    .about-content {
+        max-width: 1060px;
+    }
+    .user-photo {
+        width: 250px;
+        height: 250x;
+    }
+}
+
+@media (max-width: 1390px) {
+    .about {
+        height: auto;
+    }
+    .about-content {
+        max-width: 1100px;
+    }
+
+    .app-check img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-info {
+        flex-direction: column;
+    }
+
+    .info-about-user {
+        margin-top: 40px;
+    }
 }

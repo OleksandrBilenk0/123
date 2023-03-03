@@ -212,6 +212,12 @@
     margin-top: -50px;
 }
 
+@media (max-width: 1390px) {
+    .projects {
+        height: auto;
+    }
+}
+
 /* .main {
     width: 100%;
     height: auto;

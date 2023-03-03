@@ -50,37 +50,36 @@
         </div>
         <section class="home">
             <div class="container">
-                
-                    <h1 class="home-hedding">WORK IS THE BEST WAY TO LOVE LIFE</h1>
-                    <div class="home-info">
-                        <div class="home-circles">
-                            <div class="cirle-container">
-                                <img class="circle" src="./images/header/Group 25.png" alt="">
+                <h1 class="home-hedding">WORK IS THE BEST WAY TO LOVE LIFE</h1>
+                <div class="home-info">
+                    <div class="home-circles">
+                        <div class="cirle-container">
+                            <img class="circle" src="./images/header/Group 25.png" alt="">
+                            <div class="centered">
+                                <h4>7</h4>
+                                <p>years <br> of experience</p>
+                            </div>
+                        </div>
+                        <div class="cirle-container">
+                                <img class="circle" src="./images/header/Group 26.png" alt="">
                                 <div class="centered">
-                                    <h4>7</h4>
-                                    <p>years <br> of experience</p>
+                                    <h4>10000+</h4>
+                                    <p>hours <br> of work</p>
                                 </div>
-                            </div>
-                            <div class="cirle-container">
-                                    <img class="circle" src="./images/header/Group 26.png" alt="">
-                                    <div class="centered">
-                                        <h4>10000+</h4>
-                                        <p>hours <br> of work</p>
-                                    </div>
-                            </div>
-                            <div class="cirle-container">
-                                    <img class="circle" src="./images/header/Group 27.png" alt="">
-                                    <div class="centered">
-                                        <h4>30+</h4>
-                                        <p>completed <br> projects</p>
-                                </div>
+                        </div>
+                        <div class="cirle-container">
+                                <img class="circle" src="./images/header/Group 27.png" alt="">
+                                <div class="centered">
+                                    <h4>30+</h4>
+                                    <p>completed <br> projects</p>
                             </div>
                         </div>
-                        <div class="home-btn">
-                            <a class="arrow-down" href="#"><img src="./images/header/scroll.png" alt="scroll"></a>
-                        </div>
+                        
                     </div>
-                
+                    <div id="home-btn">
+                        <a class="arrow-down" href="#about"><img src="./images/header/scroll.png" alt="scroll"></a>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="home-bg-img">
@@ -91,10 +90,10 @@
         <section class="about">
             <div class="container">
                 <div class="about-content">
-                    <a name="about"><h2 class="about-hedding">ABOUT ME</h2></a>
+                    <a id="about"><h2 class="about-hedding">ABOUT ME</h2></a>
                     <div class="about-info">
                         <div class="about-user">
-                            <img src="./images/about/photo.png" alt="user photo">
+                            <img class="user-photo" src="./images/about/photo.png" alt="user photo">
                             <div class="lenguage">
                                 <p>Lenguage:</p>
                                 <div class="lenguage-flag">
@@ -663,6 +662,39 @@
             }  
         });
     </script>
+
+    <script>
+        const anchors = document.querySelectorAll('a[href*="#"]')
+
+            for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+                
+                const blockID = anchor.getAttribute('href').substr(1)
+                
+                document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+                })
+            })
+            }
+    </script>
+
+    <!-- <script>
+        $(document).ready(function(){
+        $("#home-btn", "#menu").on("click","a", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+            //забираем идентификатор бока с атрибута href
+            const id  = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
+
+    </script> -->
 <!-- <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">

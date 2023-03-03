@@ -72,6 +72,25 @@
 }
 
 
+
+@media (max-width: 1550px) {
+    .skills-content {
+        max-width: 1060px;
+    }
+}
+
+@media (max-width: 1390px) {
+
+    .skills {
+        height: auto;
+    }
+    .circle {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
 /* .main {
     width: 100%;
     height: auto;
