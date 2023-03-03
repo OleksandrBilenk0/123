@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/kharkiv-tone" rel="stylesheet">
-
+<!-- Jquery -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
 <!-- reset -->
     <link rel="stylesheet" href="./style/reset.css">
@@ -16,21 +17,20 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/mobile_nav_wrapper.css">
     <link rel="stylesheet" href="./style/mobile_nav_btn.css">
-    <!-- <link rel="stylesheet" href="./style/burger.css"> -->
+    <link rel="stylesheet" href="./style/burger.css">
     <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="./style/skills.css">
     <link rel="stylesheet" href="./style/projects.css">
     <link rel="stylesheet" href="./style/contact.css">
     <link rel="stylesheet" href="./style/tools.css">
     <link rel="stylesheet" href="./style/footer.css">
-<!-- adaptive -->
-    <!-- <link rel="stylesheet" href="./style/adaptive.css"> -->
-        <link rel="shortcut icon" href="./images/icons8-e-learning-96.png" type="image/png">
+<!-- Icon -->
+    <link rel="shortcut icon" href="./images/icons8-e-learning-96.png" type="image/png">
 
-
-    <title>Document</title>
+    <title>Rostyslav Soroka</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-row">
@@ -47,18 +47,16 @@
                         <a class="header-nav-tools" href="">Our Tools</a>
                     </nav>
                 </div>
-                <button type="button" class="mobile_nav_btn">
-                        <span class="mobile_nav_btn_icon"></span>
-                    </button>
-                <div class="mobile_nav_wrapper">
-                    <nav class="mobile_nav">
-                        <ul>
-                            <li><a href="#about">About ME</a></li>
-                            <li><a href="#projects">Recent Project</a></li>
-                            <li><a href="#skills">MY SKILLS</a></li>
-                            <li><a href="#tools">Our Tools</a></li>
-                        </ul>
-                    </nav>
+                <div id="burger-menu" class="burger">
+                <span></span>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#about" class="menu__item">About ME</a></li>
+                        <li><a href="#projects" class="menu__item">Recent Project</a></li>
+                        <li><a href="#skills" class="menu__item">MY SKILLS</a></li>
+                        <li><a href="#tools" class="menu__item">Our Tools</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -101,10 +99,11 @@
         </div>
     </header>
     <main>
+        <!-- About -->
         <section class="about">
-            <div class="container">
+            <a id="about"><div class="container">
                 <div class="about-content">
-                    <a id="about"><h2 class="about-hedding">ABOUT ME</h2></a>
+                    <h2 class="about-hedding">ABOUT ME</h2>
                     <div class="about-info">
                         <div class="about-user">
                             <img class="user-photo" src="./images/about/photo.png" alt="user photo">
@@ -192,64 +191,68 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></a>
         </section>
+        <!-- Skills -->
         <section class="skills">
-            <div class="container">
-                <div class="skills-content">
-                    <a name="skills"><h2 class="skills-hedding">MY SKILLS</h2></a>
-                    <div class="skills-info">
-                        <div class="skills-circles">
-                            <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
-                            <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
-                            <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
-                        </div>
-                        <div class="experience">
-                            <div class="experience-top">
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon1.png" alt="icon">
-                                    <p>Manual Testing</p>
-                                </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon2.png" alt="icon">
-                                    <p>UI testing/Pixel-perfect</p>
-                                </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon3.png" alt="icon">
-                                    <p>Usability Testing</p>
-                                </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon8.png" alt="icon">
-                                    <p>Testing Artifacts Test Case / Test Plan / Check List</p>
-                                </div>
+            <a id="skills">
+                <div class="container">
+                    <div class="skills-content">
+                        <h2 class="skills-hedding">MY SKILLS</h2>
+                        <div class="skills-info">
+                            <div class="skills-circles">
+                                <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
+                                <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
+                                <img class="circle" src="./images/skills/Group 58-1.png" width="300px" height="300px" alt="circle">
                             </div>
-                            <div class="experience-bottom">
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon5.png" alt="icon">
-                                    <p>Mobile App <br> Testing (IOS / Android)</p>
+                            <div class="experience">
+                                <div class="experience-top">
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon1.png" alt="icon">
+                                        <p>Manual Testing</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon2.png" alt="icon">
+                                        <p>UI testing/Pixel-perfect</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon3.png" alt="icon">
+                                        <p>Usability Testing</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon8.png" alt="icon">
+                                        <p>Testing Artifacts Test Case / Test Plan / Check List</p>
+                                    </div>
                                 </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon6.png" alt="icon">
-                                    <p>Mobile App <br> Testing (IOS / Android)</p>
-                                </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon7.png" alt="icon">
-                                    <p>Windows / OS X based systems;</p>
-                                </div>
-                                <div class="experience-item">
-                                    <img src="./images/skills/icon4.png" alt="icon">
-                                    <p>Functional Testing/ <br> Regression/ Acceptance Testing</p>
+                                <div class="experience-bottom">
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon5.png" alt="icon">
+                                        <p>Mobile App <br> Testing (IOS / Android)</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon6.png" alt="icon">
+                                        <p>Mobile App <br> Testing (IOS / Android)</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon7.png" alt="icon">
+                                        <p>Windows / OS X based systems;</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <img src="./images/skills/icon4.png" alt="icon">
+                                        <p>Functional Testing/ <br> Regression/ Acceptance Testing</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </section>
+        <!-- Projects -->
         <section class="projects">
             <div class="container">
                 <div class="projects-content">
-                    <a name="projects"><h2 class="projects-hedding">RECENT PROJECTS</h2></a>
+                    <h2 class="projects-hedding"><a id="projects">RECENT PROJECTS</a></h2>
                     <div class="projects-info">
                         <div class="tarkikComandSlider desktop">
                             <article id="div-01" class="comandSlider__item">
@@ -514,140 +517,146 @@
                             </div>
                         </div>
                     </div>
-                </div>            
+                </div>   
             </div>
         </section>
+        <!-- Contact -->
         <section class="contact">
-            <div class="container">
+            <a id="contact"><div class="container">
                 <div class="contact-content">
-                    <a name="contact"><h2 class="contact-hedding">WANT TO GET ADVICE ON YOUR PROJECT?</h2></a>
+                    <h2 class="contact-hedding">WANT TO GET ADVICE ON YOUR PROJECT?</h2>
                     <a class="contact-btn" href="https://www.upwork.com/freelancers/~012092c7ad53e91f75">contact me</a>
                 </div>
             </div>
+            </a>
         </section>
+        <!-- Tools -->
         <section class="tools">
-            <div class="container">
-                <div class="tools-content">
-                    <a name="tools"><h2 class="tools-hedding">TOOLS USED</h2></a>
-                    <div class="tools-info">
-                        <p>We use a wide range of technologies and tools. If you do not know how best to implement your project - contact us and we will be glad to consult you.</p>
-                    </div>
-                    <div class="tools-section">
-                        <div class="tools-wrapper">
-                            <div class="tools-item">
-                                <img src="./images/tools/VSC.png" width="60px" height="60px" alt="VSC">
-                                <p>VS Code</p>
+            <a id="tools">
+                <div class="container">
+                    <div class="tools-content">
+                        <h2 class="tools-hedding">TOOLS USED</h2>
+                        <div class="tools-info">
+                            <p>We use a wide range of technologies and tools. If you do not know how best to implement your project - contact us and we will be glad to consult you.</p>
+                        </div>
+                        <div class="tools-section">
+                            <div class="tools-wrapper">
+                                <div class="tools-item">
+                                    <img src="./images/tools/VSC.png" width="60px" height="60px" alt="VSC">
+                                    <p>VS Code</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/WS.png" width="60px" height="60px" alt="WS">
+                                    <p>WEBSTORM</p>
+                                </div>
+                                <div class="tools-item figma-descktop">
+                                    <img width="40px" height="60px" src="./images/tools/Figma.png" alt="Figma">
+                                    <p>FIGMA</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/githab.png" width="60px" height="60px" alt="githab">
+                                    <p>GITHAB</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/android.png" width="60px" height="60px" alt="android">
+                                    <p>ANDROID STUDIO</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/jira.png" width="60px" height="60px" alt="jira">
+                                    <p>JIRA</p>
+                                </div>
                             </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/WS.png" width="60px" height="60px" alt="WS">
-                                <p>WEBSTORM</p>
+                            <div class="tools-wrapper">
+                                <div class="tools-item">
+                                    <img src="./images/tools/trelo.png" width="60px" height="60px" alt="trello">
+                                    <p>Trello</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/asana.png" width="63px" height="60px" alt="asana">
+                                    <p>Asana</p>
+                                </div>
+                                <div class="tools-item bugherd-descktop">
+                                    <img src="./images/tools/bugherd.png" width="178px" height="60px" alt="bugherd">
+                                    <p>BugHerd</p>
+                                </div>
+                                <div class="tools-item figma-mobile">
+                                    <img width="40px" height="60px" src="./images/tools/Figma.png" alt="Figma">
+                                    <p>FIGMA</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/gitlab.png" width="65px" height="60px" alt="gitlab">
+                                    <p>GitLab</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/clickUp.png" width="50px" height="60px" alt="clickUp">
+                                    <p>ClickUp</p>
+                                </div>
                             </div>
-                            <div class="tools-item figma-descktop">
-                                <img width="40px" height="60px" src="./images/tools/Figma.png" alt="Figma">
-                                <p>FIGMA</p>
+                            <div class="tools-wrapper">
+                                <div class="tools-item azure-descktop">
+                                    <img src="./images/tools/DOAzure.png" width="60px" height="60px" alt="DOAzure">
+                                    <p>DevOps Azure</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/SHpoint.png" width="60px" height="60px" alt="SHpoint">
+                                    <p>SharePoint</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/basecamp.png" width="60px" height="60px" alt="basecamp">
+                                    <p>Basecamp</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/postman.png" width="60px" height="60px" alt="postman">
+                                    <p>Postman</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/swager.png" width="60px" height="60px" alt="swager">
+                                    <p>Swagger</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/brawserstack.png" width="60px" height="60px" alt="brawserstack">
+                                    <p>Browser Stack</p>
+                                </div>   
                             </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/githab.png" width="60px" height="60px" alt="githab">
-                                <p>GITHAB</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/android.png" width="60px" height="60px" alt="android">
-                                <p>ANDROID STUDIO</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/jira.png" width="60px" height="60px" alt="jira">
-                                <p>JIRA</p>
+                            <div class="tools-wrapper">
+                                <div class="tools-item">
+                                    <img src="./images/tools/AdobeXD.png" width="60px" height="60px" alt="AdobeXD">
+                                    <p>AdobeXD</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/inVision.png" width="60px" height="60px" alt="inVision">
+                                    <p>InVision</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/X-ray-jira.png" width="28px" height="60px" alt="X-ray-jira">
+                                    <p>XRay for JIRA</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/testrall.png" width="60px" height="60px" alt="testrall">
+                                    <p>TestRail</p>
+                                </div>
+                                <div class="tools-item">
+                                    <img src="./images/tools/rainforest.png" width="60px" height="60px" alt="rainforest">
+                                    <p>Rainforest</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="tools-wrapper">
-                            <div class="tools-item">
-                                <img src="./images/tools/trelo.png" width="60px" height="60px" alt="trello">
-                                <p>Trello</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/asana.png" width="63px" height="60px" alt="asana">
-                                <p>Asana</p>
-                            </div>
-                            <div class="tools-item bugherd-descktop">
+                        <div class="tools-mobile">
+                            <div class="tools-item bugherd-mobile">
                                 <img src="./images/tools/bugherd.png" width="178px" height="60px" alt="bugherd">
                                 <p>BugHerd</p>
                             </div>
-                            <div class="tools-item figma-mobile">
-                                <img width="40px" height="60px" src="./images/tools/Figma.png" alt="Figma">
-                                <p>FIGMA</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/gitlab.png" width="65px" height="60px" alt="gitlab">
-                                <p>GitLab</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/clickUp.png" width="50px" height="60px" alt="clickUp">
-                                <p>ClickUp</p>
-                            </div>
-                        </div>
-                        <div class="tools-wrapper">
-                            <div class="tools-item azure-descktop">
+                            <div class="tools-item azure-mobile">
                                 <img src="./images/tools/DOAzure.png" width="60px" height="60px" alt="DOAzure">
                                 <p>DevOps Azure</p>
                             </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/SHpoint.png" width="60px" height="60px" alt="SHpoint">
-                                <p>SharePoint</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/basecamp.png" width="60px" height="60px" alt="basecamp">
-                                <p>Basecamp</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/postman.png" width="60px" height="60px" alt="postman">
-                                <p>Postman</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/swager.png" width="60px" height="60px" alt="swager">
-                                <p>Swagger</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/brawserstack.png" width="60px" height="60px" alt="brawserstack">
-                                <p>Browser Stack</p>
-                            </div>   
-                        </div>
-                        <div class="tools-wrapper">
-                            <div class="tools-item">
-                                <img src="./images/tools/AdobeXD.png" width="60px" height="60px" alt="AdobeXD">
-                                <p>AdobeXD</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/inVision.png" width="60px" height="60px" alt="inVision">
-                                <p>InVision</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/X-ray-jira.png" width="28px" height="60px" alt="X-ray-jira">
-                                <p>XRay for JIRA</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/testrall.png" width="60px" height="60px" alt="testrall">
-                                <p>TestRail</p>
-                            </div>
-                            <div class="tools-item">
-                                <img src="./images/tools/rainforest.png" width="60px" height="60px" alt="rainforest">
-                                <p>Rainforest</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools-mobile">
-                        <div class="tools-item bugherd-mobile">
-                            <img src="./images/tools/bugherd.png" width="178px" height="60px" alt="bugherd">
-                            <p>BugHerd</p>
-                        </div>
-                        <div class="tools-item azure-mobile">
-                            <img src="./images/tools/DOAzure.png" width="60px" height="60px" alt="DOAzure">
-                            <p>DevOps Azure</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </section>                
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -661,10 +670,11 @@
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
+    <!-- For slider -->
     <script>
         $('.tarkikComandSlider').slick({
             slidesToShow: 2,
@@ -685,22 +695,7 @@
             ]
         });
     </script>
-    
-    <script>
-        const burgerMenu = document.getElementById('burger-menu');
-        const overlay = document.getElementById('menu');
-            burgerMenu.addEventListener('click', function() {
-            this.classList.toggle("close");
-            overlay.classList.toggle("overlay");
-            });
-            overlay.addEventListener('click', function(e) {
-            if (e.target.matches('a')) {
-                overlay.classList.remove('overlay');
-                burgerMenu.classList.remove('close');
-            }  
-        });
-    </script>
-
+    <!-- For skroll -->
     <script>
         const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -717,30 +712,20 @@
             })
             }
     </script>
-
+    <!-- For burger menu -->
     <script>
-        const mobileNavBtn = document.querySelector('.mobile_nav_btn');
-        const mobileNavIcon = document.querySelector('.mobile_nav_btn_icon');
-        const mobileNavWrapper = document.querySelector('.mobile_nav_wrapper');
-
-        mobileNavBtn.addEventListener('click', function () {
-        mobileNavIcon.classList.toggle('active');
-        mobileNavWrapper.classList.toggle('active');
-        document.body.classList.toggle('no_scroll')
-        })
-
+        const burgerMenu = document.getElementById('burger-menu');
+        const overlay = document.getElementById('menu');
+            burgerMenu.addEventListener('click', function() {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+            });
+            overlay.addEventListener('click', function(e) {
+            if (e.target.matches('a')) {
+                overlay.classList.remove('overlay');
+                burgerMenu.classList.remove('close');
+            }  
+        });
     </script>
-<!-- <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a href="#about" class="menu__item">About ME</a></li>
-                <li><a href="#projects" class="menu__item">Recent Project</a></li>
-                <li><a href="#skills" class="menu__item">MY SKILLS</a></li>
-                <li><a href="#tools" class="menu__item">Our Tools</a></li>
-            </ul>
-        </div> -->
 </body>
 </html>

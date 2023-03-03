@@ -5,7 +5,7 @@
   overflow: visible;
   position: absolute;
   z-index: 99;
-  right: 63px;
+  right: 33px;
   top: 40px;
 }
 
@@ -52,7 +52,7 @@
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 33px;
+  top: 60px;
   right: 33px;
   width: 33px;
   position: fixed
@@ -97,7 +97,8 @@
   visibility: visible;
   opacity: 1;
   background: rgba(0, 0, 0, 1);
-  
+  left: 0;
+  position: fixed;
 }
 
 #menu li {
@@ -107,7 +108,7 @@
 #menu ul {
   margin-top: 300px;
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -118,19 +119,15 @@
 
 #menu a {
   display: block;
-  font-size: 32px;
+  font-size: 16px;
   margin-bottom: 30px;
   text-decoration: none;
   background: none;
-
   font-family: 'Kharkiv Tone';
   font-weight: 400;
   line-height: 16px;
   color: #fff;
+  opacity: 0.75;
+  text-transform: uppercase;
 }
 
-#burger-menu.close span{
-  
-  right: 63px !important;
-  top: 60px !important;
-}

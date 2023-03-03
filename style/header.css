@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: auto;
     font-family: 'Goldman', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Kharkiv Tone', sans-serif;
@@ -132,6 +132,10 @@ body {
     object-fit: cover;
 }
 
+#burger-menu {
+    display: none;
+}
+
 @media (max-width: 1550px) {
     .container {
         width: 1060px;
@@ -254,6 +258,10 @@ body {
 @media (max-width: 860px) {
     .header-nav {
         display: none;
+    }
+
+    #burger-menu {
+        display: flex;
     }
 }
 
