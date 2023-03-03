@@ -22,6 +22,7 @@
     background-image: linear-gradient(99.73deg, #9747FF 0.42%, #5A77F6 109.59%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .projects-info {

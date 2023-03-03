@@ -215,3 +215,38 @@ body {
         align-items: center;
     }
 }
+
+@media (max-width: 900px) {
+    .container {
+        width: 700px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .home-content {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 600px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .home-content {
+        max-width: 400px;
+    }
+
+    .home {
+        padding-top: 160px;
+    }
+
+    .home-hedding {
+        font-family: 'Kharkiv Tone';
+        font-weight: 400;
+        font-size: 76px;
+        line-height: 77px;
+    }
+}

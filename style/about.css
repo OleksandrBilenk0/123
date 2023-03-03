@@ -124,6 +124,10 @@ b {
     justify-content: space-between;
 }
 
+.user-app-mobile {
+    display: none;
+}
+
 .app-check {
     display: flex;
     align-items: center;
@@ -173,5 +177,81 @@ b {
 
     .info-about-user {
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .info-about-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info-top {
+        display: flex;
+        margin-right: 0px;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .top-text {
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .user-info-middle {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .user-info-middle img {
+        margin-left: 0px;
+        
+    }
+
+    .middle-text {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bottom-text {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .user-app {
+        display: none;
+    }
+
+    .user-app-mobile {
+        display: flex;
+        width: 500px;
+        height: 130px;
+        justify-content: space-between;
+        /* margin-right: 200px; */
+    }
+
+    .app-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* margin-right: 62px; */
+    }
+
+    .app-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .app-check img {
+        margin-right: 20px;
     }
 }

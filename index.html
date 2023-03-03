@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style/reset.css">
 <!-- style -->
     <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/mobile_nav_wrapper.css">
+    <link rel="stylesheet" href="./style/mobile_nav_btn.css">
     <!-- <link rel="stylesheet" href="./style/burger.css"> -->
     <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="./style/skills.css">
@@ -36,15 +38,27 @@
                     <a href="https://www.upwork.com/freelancers/~012092c7ad53e91f75">Rostyslav <br> Soroka</a>
                 </div>
                 <div class="header-nav">
-                    <div class="header-nav-top">
+                    <nav class="header-nav-top">
                         <a class="header-nav-about" href="">About ME</a>
                         <a class="header-nav-project" href="">Recent Project</a>
-                    </div>
-                    <div class="header-nav-bottom">
+                    </nav>
+                    <nav class="header-nav-bottom">
                         <a class="header-nav-skills" href="">MY SKILLS</a>
                         <a class="header-nav-tools" href="">Our Tools</a>
-                    </div>
-                    
+                    </nav>
+                </div>
+                <button type="button" class="mobile_nav_btn">
+                        <span class="mobile_nav_btn_icon"></span>
+                    </button>
+                <div class="mobile_nav_wrapper">
+                    <nav class="mobile_nav">
+                        <ul>
+                            <li><a href="">About ME</a></li>
+                            <li><a href="">Recent Project</a></li>
+                            <li><a href="">MY SKILLS</a></li>
+                            <li><a href="">Our Tools</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -150,6 +164,29 @@
                                 <div class="app-check">
                                     <img src="./images/about/check 2.png" alt="check">
                                     <p>Tableau</p>
+                                </div>
+                            </div>
+                            <div class="user-app-mobile">
+                                <div class="app-top">
+                                    <div class="app-check">
+                                        <img src="./images/about/check 2.png" alt="check">
+                                        <p>AWS</p>
+                                    </div>
+                                    <div class="app-check">
+                                        <img src="./images/about/check 2.png" alt="check">
+                                        <p>Azure</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="app-bottom">
+                                    <div class="app-check">
+                                        <img src="./images/about/check 2.png" alt="check">
+                                        <p>Salesforce</p>
+                                    </div>
+                                    <div class="app-check">
+                                        <img src="./images/about/check 2.png" alt="check">
+                                        <p>Tableau</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -680,21 +717,18 @@
             }
     </script>
 
-    <!-- <script>
-        $(document).ready(function(){
-        $("#home-btn", "#menu").on("click","a", function (event) {
-            //отменяем стандартную обработку нажатия по ссылке
-            event.preventDefault();
-            //забираем идентификатор бока с атрибута href
-            const id  = $(this).attr('href'),
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-                top = $(id).offset().top;
-            //анимируем переход на расстояние - top за 1500 мс
-            $('body,html').animate({scrollTop: top}, 1000);
-        });
-    });
+    <script>
+        const mobileNavBtn = document.querySelector('.mobile_nav_btn');
+        const mobileNavIcon = document.querySelector('.mobile_nav_btn_icon');
+        const mobileNavWrapper = document.querySelector('.mobile_nav_wrapper');
 
-    </script> -->
+        mobileNavBtn.addEventListener('click', function () {
+        mobileNavIcon.classList.toggle('active');
+        mobileNavWrapper.classList.toggle('active');
+        document.body.classList.toggle('no_scroll')
+        })
+
+    </script>
 <!-- <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
