@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 .container {
-    width: 1360px;
+    max-width: 1360px;
     padding-left: auto;
     padding-right: auto;
 }
@@ -211,6 +211,9 @@ body {
     .home-info {
         margin-top: 40px;
     }
+}
+
+@media (max-width: 1190px) {
 }
 
 @media (max-width: 1190px) {

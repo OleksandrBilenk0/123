@@ -49,13 +49,13 @@
 }
 
 #burger-menu.close span {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 60px;
-  right: 33px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 163px;
+  right: 163px;
   width: 33px;
-  position: fixed
+  position: absolute
 }
 
 #burger-menu.close span:before {
@@ -64,7 +64,7 @@
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   width: 33px;
-  position: fixed
+  position: absolute
 }
 
 #burger-menu.close span:after {
@@ -75,7 +75,7 @@
   transform: rotate(90deg);
   opacity: 1;
   width: 33px;
-  position: fixed
+  position: absolute
 }
 
 #menu {
@@ -131,3 +131,8 @@
   text-transform: uppercase;
 }
 
+#burger-menu.close span{
+  
+  right: 0px !important;
+  top: 12px !important;
+}
