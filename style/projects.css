@@ -237,6 +237,16 @@
     }
 }
 
+@media (max-width: 1190px) {
+    .comandSlider__item::before {
+        margin: 0px 60px;
+    }
+    .comandSlider__item {
+        padding: 40px 80px 0px;
+    }
+}
+
+
 @media (max-width: 860px) {
     .tarkikComandSlider.mobile {
         display: flex;
@@ -262,7 +272,7 @@
     .comandSlider__item::before {
         height: 845px;  /* height of slider */
         padding: 5px; 
-        margin: 0px 40px;
+        margin: 0px 90px;
     }
 
     .slider-text {
@@ -276,7 +286,7 @@
     }
 
     .slick-slider .comandSlider__item {
-        padding: 40px 40px 0px;
+        padding: 40px 90px 0px;
         height: 790px;
         /* justify-content: unset;    */
     }
