@@ -149,6 +149,9 @@ b {
 
 
 @media (max-width: 1550px) {
+    .about {
+        height: 100%;
+    }
     .about-content {
         max-width: 1060px;
     }
@@ -182,6 +185,9 @@ b {
 }
 
 @media (max-width: 900px) {
+    .about {
+        height: 1400px;
+    }
     .about-hedding {
         font-size: 32px;
         line-height: 32px; 
@@ -189,6 +195,10 @@ b {
 }
 
 @media (max-width: 780px) {
+
+    .about {
+        height: 1600px;
+    }
     .info-about-user {
         display: flex;
         flex-direction: column;
@@ -259,6 +269,13 @@ b {
 
     .app-check img {
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .about {
+        height: 1700px;
     }
 }
 

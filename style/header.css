@@ -199,8 +199,9 @@ body {
 
     .home-hedding {
         margin-right: 0px;
-        font-size: 90px;
-        line-height: 90px;
+        font-size: 76px;
+        line-height: 76px;
+        margin-right: 400px;
     }
 
     .home {
@@ -231,7 +232,7 @@ body {
 @media (max-width: 1024px) {
 
     .header {
-        height: 100vh;
+        height: 1200px;
     }
     .container {
         width: 800px;
@@ -310,6 +311,10 @@ body {
 
 @media (max-width: 690px) {
 
+    .header {
+        height: 1100px;
+    }
+
     .container {
         width: 500px;
         padding-left: auto;
@@ -334,6 +339,10 @@ body {
 
 @media (max-width: 560px) {
 
+    .header {
+        height: 1300px;
+    }
+
     .container {
         width: 400px;
         padding-left: auto;
@@ -346,7 +355,10 @@ body {
 }
 
 @media (max-width: 450px) {
-
+    
+    .header {
+        height: 1100px;
+    }
     .container {
         width: 300px;
         padding-left: auto;
